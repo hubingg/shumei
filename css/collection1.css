@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("../images/pro_xx_bg.png");
+    font-family: "Trebuchet MS",Verdana,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+/*´óºÐ×Ó*/
+.max_collection{
+    width: 1150px;
+    height: 602px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.collection_inner {
+    width: 1150px;
+    height: 602px;
+    margin:  0 auto;
+    margin-top: 24px;
+}
+/*×ó±ß*/
+.collection_inner .collection_inner_left {
+    width: 600px;
+    height: 602px;
+    background: #FFF;
+    float: left;
+}
+#gallery_nav1 a,#gallery_nav2 a,#gallery_nav3 a,#gallery_nav4 a,#gallery_nav5 a{
+    outline-color: red;
+    display: block;
+    width: 143px;
+    height: 192px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+#gallery1 img,#gallery2 img,#gallery3 img,#gallery4 img,#gallery5 img {
+    border: none;
+}
+
+#gallery_nav1,#gallery_nav5,#gallery_nav4,#gallery_nav3,#gallery_nav2 {
+    float: right;
+    width: 150px;
+    text-align: center;
+}
+
+#gallery_nav1 img,#gallery_nav2 img,#gallery_nav3 img,#gallery_nav4 img,#gallery_nav5 img{
+    width: 135px;
+    height: 184px;
+    border: 1px solid #D0D0D0;
+    margin-top: 4px;
+}
+
+#gallery_output1,#gallery_output2,#gallery_output3,#gallery_output4,#gallery_output5{
+    float: left;
+    width: 446px;
+}
+
+#gallery_output1 img,#gallery_output3 img,#gallery_output3 img,#gallery_output4 img,#gallery_output5 img {
+    width: 446px;
+    display: block;
+}
+/*ÓÒ±ß*/
+.collection_inner .collection_inner_right {
+    float: right;
+    width: 380px;
+    height: 602px;
+    /*background-color: yellowgreen;*/
+}
+.collection_inner .collection_inner_right .top {
+    margin-top: 15px;
+}
+.collection_inner_right .title {
+    padding-top: 13px;
+    font: 23px/40px Microsoft yahei;
+    color: #000;
+    border-bottom: 1px solid #d3d3d3;
+}
+.collection_inner_right .money {
+    font: 20px/40px Microsoft yahei;
+    color: #ef5a9a;
+    padding-top: 4px;
+    display: block;
+}
+.collection_inner_right p {
+    font: 14px/24px simsun;
+    color: #333;
+    text-indent: 2em;
+}
+.collection_inner_right .see_details {
+    font: 700 14px/32px simsun;
+    color: #000;
+    border-bottom: 1px solid #d3d3d3;
+    margin-top: 17px;
+}
+.collection_inner_right .ingredients {
+    padding-bottom: 13px;
+    margin-top: 18px;
+    border-bottom: 1px solid #d3d3d3;
+}
+.ingredients table {
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.ingredients td strong, .ingredients td span {
+    color: #000;
+}
+b, strong {
+    font-weight: bold;
+}
+.ingredients td {
+    font: 12px/23px simsun;
+    color: #666;
+}
+.collection_inner_right .bottom {
+    width: 230px;
+
+
+    /*margin-top: 63px;*/
+}
+.collection_inner_right .bottom img {
+    opacity: 0.8;
+}
+.banner_bottom{
+    width: 1130px;
+    height: 150px;
+    background-color: #a2a2a2;
+    margin: 30px auto;
+}
+.banner_bottom ul li{
+    margin: 5px;
+    border: 1px solid #FFFFFF;
+    float: left;
+    cursor: pointer;
+}

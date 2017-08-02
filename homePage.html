@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .cover {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+        }
+
+        i {
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 2px 2px #fff996;
+        }
+
+        html,body {
+            height: 100%;
+            margin: 0;
+            padding: 0
+        }
+
+        ul,li {
+            list-style: none;
+            text-indent: 0;
+            text-decoration: none;
+            margin: 0;
+            padding: 0
+        }
+
+        img {
+            border: 0
+        }
+
+        body {
+            background-color: #000;
+            color: #999;
+            font: 100%/18px helvetica, arial, sans-serif
+        }
+
+        a {
+            text-decoration: none;
+            color: #444;
+        }
+
+        /*team部分*/
+        .team {
+            left: 100px;
+        }
+
+        /*列表部分*/
+        .box {
+            position: absolute;
+            left: 50%;
+            margin-left: -350px;
+            top: 75%;
+        }
+
+        .box .intro li {
+            float: left;
+            width: 70px;
+            margin: 0 3px;
+        }
+
+        .box .intro li img {
+            width: 100%;
+        }
+
+        .box .intro li:hover ~ .show{
+            transform: scale(1);
+        }
+
+        .box .intro li.show {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border: 1px solid silver;
+            border-radius: 5px;
+            left: 50%;
+            margin-left: -300px;
+            bottom: 140px;
+            background: url(images/songshu.jpg) no-repeat center;
+            transform: scale(.7);
+            transition: all ease-in-out .3s .3s;
+        }
+
+        .box .intro li.show:hover {
+            transform: scale(1);
+            /*background-position: 200px center;*/
+        }
+
+        .box .intro li.show span {
+            position: absolute;
+            width: 170px;
+            top: 50px;
+            left: 15px;
+            color: #bbb;
+            font: 18px/2.5 arial, 'Microsoft Yahei', 宋体 ;
+        }
+
+/*跳转按钮*/
+        a.goto,a.team {
+            position: fixed;
+            right: 100px;
+            bottom: 200px;
+            width: 150px;
+            height: 50px;
+            font: bold 16px/50px 'Microsoft Yahei';
+            text-align: center;
+            border-radius: 10px;
+            background:
+            linear-gradient(limegreen, transparent), linear-gradient(90deg, skyblue, transparent), linear-gradient(-90deg, coral, transparent);
+            background-blend-mode: screen;
+
+        }
+        a.goto:hover, a.team:hover {
+            animation: tada 1s 2;
+        }
+        @-webkit-keyframes tada {
+            0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+            10%,
+            20% {
+                -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+            }
+            30%,
+            50%,
+            70%,
+            90% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+            }
+            40%,
+            60%,
+            80% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+            }
+            100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+        }
+        @keyframes tada {
+            0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                -ms-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+            10%,
+            20% {
+                -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+            }
+            30%,
+            50%,
+            70%,
+            90% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+            }
+            40%,
+            60%,
+            80% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+            }
+            100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                -ms-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+        }
+
+    </style>
+    <script src="js/jquery-1.12.2.min.js"></script>
+</head>
+<body>
+<!--夜空背景-->
+<div class="cover" id="cover"></div>
+<div class="box">
+    <div class="intro">
+        <ul id="intro_ul">
+            <li><img src="images/1.jpg" alt=""/></li>
+            <li><img src="images/2.jpg" alt=""/></li>
+            <li><img src="images/3.jpg" alt=""/></li>
+            <li><img src="images/4.jpg" alt=""/></li>
+            <li><img src="images/5.jpg" alt=""/></li>
+            <li><img src="images/6.jpg" alt=""/></li>
+            <li><img src="images/7.jpg" alt=""/></li>
+            <li><img src="images/8.jpg" alt=""/></li>
+            <li><img src="images/9.jpg" alt=""/></li>
+            <li><img src="images/10.jpg" alt=""/></li>
+            <li class="show"><span id="intro_text"></span></li>
+        </ul>
+    </div>
+</div>
+<!--组名-->
+<a href="#" class="team">11组</a>
+<!--跳转按钮-->
+<a href="index.html" class="goto">查看作品</a>
+<!--创建星星眨眼-->
+
+<script>
+    // 字符串替换方式
+    // 1 动态生成元素
+    var str ='<i style="left:{{x}}px;top:{{y}}px;width: 1px;height: 1px;"></i>'
+    var div = $("#cover");
+    var w = $(window).width();
+    var h = $(window).height();
+
+    function createStars(n){
+        var star = [];
+        for (var i = 0; i < n; i++) {
+            var x = Math.random()*w;
+            var y = Math.random()*h;
+            var s1 = str
+                    .replace(/{{x}}/g,x)
+                    .replace(/{{y}}/g,y)
+            star.push(s1);
+        }
+        div.html(star.join(""));
+    }
+    // 生成星星
+    createStars(150);
+
+    // 2 添加事件 定时器
+    //      1. 随机数决定是否淡出
+    //      2. 淡出后随机移动位置
+    //      3. 移动位置后淡入
+    var is = div.children();
+
+    setTimeout(function(){
+        addBlink();
+        setTimeout(arguments.callee,2000);
+    },2000)
+
+    function addBlink() {
+        is.each(function(index,ele) {
+            var ele = $(ele);
+            if (Math.random() - 0.5 > 0 ? 1 : 0) {
+                ele.fadeOut(1500,function(){ele.fadeIn(1500,move(ele))});
+            }
+        })
+    }
+    // 移动函数
+    function move(ele){
+            var x = ele.offset().left+(Math.random()-0.5>0 ? 1 : -1)*Math.random()*10;
+            var y = ele.offset().top+(Math.random()-0.5>0 ? 1 : -1)*Math.random()*10;
+            ele.offset({
+                left:x,
+                top:y
+            });
+    }
+
+</script>
+<!--幻灯片数据-->
+<script>
+    //  成员介绍数据
+    var intro_data =[
+        {
+        img:"url(images/1.jpg)",
+        name:"高宽",
+        intro:"宅男、冷漠、爱玩",
+        motto:"What are we doing?"
+    },{
+        img:"url(images/2.jpg)",
+        name:"米敏",
+        intro:"低调、慢热、喜静",
+        motto:"怜取眼前，活在当下"
+    },{
+        img:"url(images/3.jpg)",
+        name:"宋红娟",
+            intro:"大概四次元",
+        motto:"喜欢美好的东西,比如说好看的妹子"
+    },{
+        img:"url(images/4.jpg)",
+        name:"彭宇",
+        intro:"吃货、宅、安静、闷骚 ",
+        motto:"少壮不努力，长大打飞机"
+    },{
+        img:"url(images/5.jpg)",
+        name:"钟瑞",
+        intro:"没事逗逗逼，喜好运动，喜欢交朋友，性格内向外向型，欢迎大家来骚扰！",
+        motto:"识时务为俊杰！"
+    },{
+        img:"url(images/6.jpg)",
+        name:"何_银雪\u2764",
+        intro:"耿直girl、喜欢旅行、看电影",
+        motto:"生活的乐趣不就是你套路套路我，我套路套路你"
+    },{
+        img:"url(images/7.jpg)",
+        name:"刘惠龙",
+        intro:"逗比、宅男、爱玩",
+        motto:" So what?"
+    },{
+        img:"url(images/8.jpg)",
+        name:"王飞敏",
+        intro:"看小说,玩游戏,遛圈",
+        motto:"幻灭是成长的开始"
+    },{
+        img:"url(images/9.jpg)",
+        name:"赵观喜",
+        intro:"男的",
+        motto:"好好学习，天天向上"
+    },{
+        img:"url(images/10.jpg)",
+        name:"邓业凯",
+        intro:"电影、民谣、游戏、旅行、摄影、特立独行",
+        motto:"只有蠢货才特别在意别人的看法"
+    }];
+    //  HTML 字符串
+    var str = 'Name：{{name}} <br/>intro：{{intro}} <br/>motto：{{motto}}'
+
+    var intro_text = $("#intro_text");
+    var lis = $("#intro_ul li:not(:last)");
+    var show = $(".show");
+    lis.on('mouseenter',function(){
+        var ind = intro_data[$(this).index()];
+        var s = str.replace(/{{name}}/g,ind.name)
+                .replace(/{{intro}}/g,ind.intro)
+                .replace(/{{motto}}/g,ind.motto);
+        intro_text.html(s);
+        show.css({backgroundImage:ind.img,backgroundPosition:200});
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="icon" href="icon.ico"/>
+    <script src="js/jquery-1.12.2.min.js"></script>
+</head>
+<body>
+<!--导航栏部分 - 高宽-->
+<div class="cover">
+    <!-- 遮罩 动画 展示-->
+</div>
+<div class="nav">
+    <div class="contain">
+        <ul id="navul">
+            <li><a href="javascript:;"><span>HOME</span><i>首 页</i></a></li>
+            <li><a href="javascript:;"><span>CAMPAIGNS</span><i>时尚大片</i></a></li>
+            <li><a href="javascript:;"><span>COLLECTION</span><i>时 装</i></a></li>
+            <li><a href="javascript:;" class="logo"><img src="images/eichitoo-logo.png" title="爱居兔" alt="爱居兔"/></a></li>
+            <li><a href="javascript:;"><span>SHARE</span><i>分 享</i></a></li>
+            <li><a href="javascript:;"><span>NEWS</span><i>品牌动态</i></a></li>
+            <li><a href="javascript:;"><span>CONTACT</span><i>联系我们</i></a></li>
+        </ul>
+    </div>
+</div>
+<!--轮播图-->
+
+<div class="main_banner" id="banner">
+    <!-- 轮播图片-->
+    <ul>
+        <li><img src="images/banner01c.jpg" alt=""/></li>
+        <li><img src="images/banner02c.jpg" alt=""/></li>
+        <li><img src="images/banner03c.jpg" alt=""/></li>
+    </ul>
+    <!-- 轮播圆点-->
+    <ol>
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <!-- 左右箭头-->
+    <div class="arr">
+        <span id="left"><img src="images/prev.png" alt=""/></span>
+        <span id="right"><img src="images/next.png" alt=""/></span>
+    </div>
+</div>
+<script src="js/slide.js"></script>
+<!--时尚大片-->
+<div class="outside" id="campaigns">
+    <!--版心的盒子-->
+    <div id="camp" class="camp">
+        <div class="top"></div>
+        <div class="center"><p>不同以往的固步自封，是美在当下的时尚态度，在潮流中信手拈来，不出位，不张扬，毫无侵略性的美。</p></div>
+        <!--中间效果的部分-->
+        <div id="camp-main">
+            <!--原网页放大效果-->
+            <div class="bottom-1" >
+                <a href="javascript:;"><img src="images/campaigns-pic1.jpg" alt=""/></a>
+                <a href="javascript:;"><img src="images/campaigns-pic2.jpg" alt=""/></a>
+                <a href="javascript:;"><img src="images/campaigns-pic3.jpg" alt="" class="img3"/></a>
+                <a href="javascript:;"><img src="images/campaigns-pic4.jpg" alt=""/></a>
+                <a href="javascript:;"><img src="images/campaigns-pic5.jpg" alt=""/></a>
+            </div>
+            <!--旋转图部分-->
+            <div class="bottom-3" >
+                <ul>
+                    <li><img src="images/sc1.jpg" alt=""/></li>
+                    <li><img src="images/sc2.jpg" alt=""/></li>
+                    <li><img src="images/sc3.jpg" alt=""/></li>
+                    <li><img src="images/sc4.jpg" alt=""/></li>
+                    <li><img src="images/sc5.jpg" alt=""/></li>
+                </ul>
+                <div class="arrow">
+                    <a href="javascript:;" class="prev" id="campArrLeft"></a>
+                    <a href="javascript:;" class="next" id="campArrRight"></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="choose">
+            <ul>
+                <li>换装</li>
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+<script src="js/campaign.js"></script>
+
+<!-- collection部分-何银雪❤ start-->
+<div class="wrap collection" id="collection">
+    <h2 class="collection_pic_title"></h2>
+    <div class="collection_wrap">
+        <div class="collection_pic">
+            <a href="collection-1.html"><img src="images/collection-pic1.jpg" alt=""/>
+                <div class="collection_pic_text">
+                <span class="text1">
+                    <em>OFFICE</em>
+                    <i>AUTUMN
+                        014 FASHION SHOW</i>
+                </span>
+                </div>
+            </a>
+        </div>
+        <div class="collection_pic">
+            <a href="collection-1.html"><img src="images/collection-pic2.jpg" alt=""/>
+                <div class="collection_pic_text">
+                <span class="text2">
+                    <em>LIFE</em>
+                    <i>AUTUMN
+                        014 FASHION SHOW</i>
+                </span>
+                </div>
+            </a>
+        </div>
+        <div class="collection_pic">
+            <a href="collection-1.html"><img src="images/collection-pic3.jpg" alt=""/>
+                <div class="collection_pic_text">
+                <span class="text3">
+                    <em>FASHION</em>
+                    <i>AUTUMN
+                        014 FASHION SHOW</i>
+                </span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<script src="js/collection_pic.js"></script>
+<!-- collection部分-何银雪❤ end-->
+
+<!--分享 - 宋红娟-->
+<div class="Collection-bot .clearfix" id="share">
+    <h2 class="share_pic_title"></h2>
+    <div class="foreword">
+        <img src="images/share-pic1.jpg" alt=""/>
+        <div class="Txt">
+            <p class="max">潮流前沿</p>
+            <p class="min">FOREWORD TREND</p>
+        </div>
+        <i></i>
+        <a href="share-1.html"></a>
+    </div>
+    <div class="fashion">
+        <img src="images/share-pic2.jpg" alt=""/>
+        <div class="Txt">
+            <p class="max">时尚搭配</p>
+            <p class="min">FASHION WITH</p>
+        </div>
+        <i></i>
+        <a href="share-2.html"></a>
+    </div>
+</div>
+<script src="js/share.js"></script>
+
+<!--品牌动态部分 -- 开始 -- 彭宇-->
+<div class="news .clearfix" id="news">
+    <!--背景图-->
+    <img src="images/section-bg2.jpg" alt="" class="news-bg"/>
+    <!--标题-品牌动态-->
+    <h2 class="news-title"></h2>
+    <!--主体-旋转木马-->
+    <div class="newsBox" id="news_Box">
+        <div class="news-main" id="news_Main">
+            <ul>
+                <li><a href="news.html"><img src="images/NewsA.jpg" alt=""/></a></li>
+                <li><a href="news.html"><img src="images/NewsB.jpg" alt=""/></a></li>
+                <li><a href="news.html"><img src="images/NewsC.jpg" alt=""/></a></li>
+            </ul>
+            <div class="arrow" id="arrow">
+                <a href="javascript:;" class="left" id="arrLeft"></a>
+                <a href="javascript:;" class="right" id="arrRight"></a>
+            </div>
+            <div class="news-Text">
+                <h3 class="text-title">越清新越漂亮：素颜女神王丽坤藏起A4腰拍美装照</h3>
+                <p>3月不减肥，整年徒伤悲……夏天还没到，身材标准就从反手摸肚脐、锁骨放硬币，变成A4腰了，其大概就是说，腰杆如一张A4纸般大。</p>
+                <span><a href="javascript:;">More >> </a></span>
+            </div>
+        </div>
+    </div>
+    <div class="News-more">
+        <a href="news.html"> / 查看全部动态 / </a>
+    </div>
+</div>
+<script src="js/News.js"></script>
+
+<!--品牌动态部分 -- 结束 -- 彭宇-->
+
+<div class="footbg" id="footbg">
+    <!--页脚导航---------------->
+    <div class="footernav" id="footernav">
+        <ul id="footernavUl">
+            <li class="rightB">
+                <a href="#">
+                    地理位置
+                    <span>EICHITOO CONTANT</span>
+                </a>
+            </li>
+            <li class="rightB">
+                <a href="#">
+                    门店查询
+                    <span>EICHITOO SEACH</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    招商信息
+                    <span>EICHITOO JOIN</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--页脚内容-->
+    <div class="footercon" id="footercon">
+        <!--飞敏-->
+        <div class="footercon-f" style="display: block">
+            <div class="contact-wrap">
+                <div class="tab-content">
+                    <div class="tab-pane fade" id="contant">
+                        <p class="fs18">江阴爱居兔服装有限公司</p>
+
+                        <p class="fs36">全国服务热线：400-8812558</p>
+
+                        <p class="fs14">
+                            <span class="glyphicon glyphicon-map-marker"></span><br>地址：江苏省江阴市顾山镇北国海兴路168号
+                        </p>
+
+                        <p class="fs14">
+                            <span class="glyphicon glyphicon-earphone"></span><br>电话：0510-86999000
+                        </p>
+
+                        <p class="padT20">
+                            <span class="glyphicon glyphicon-weixin"></span><span class="glyphicon glyphicon-sina"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--业凯 -->
+        <div class="footercon-s" style="display: none">
+            <div class="retailStore">
+                <div class="store">
+                    <ul>
+                        <li>
+                            <div class="address">
+                                <span class="storeAdd">省份</span>
+                                <span class="storeAddress">江苏</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="address">
+                                <span class="storeAdd">城市</span>
+                                <span class="storeAddress">无锡</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="city">
+                    <ul>
+                        <li>
+                            <a href="javascript:void (0);">
+                                <dl>
+                                    <dt>江苏省江阴市顾山镇北国江阴爱居兔工业园特卖店</dt>
+                                    <dd>江苏省江阴市顾山镇北国海兴路68号江阴爱居兔工业园</dd>
+                                </dl>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void (0);">
+                                <dl>
+                                    <dt>江苏省江阴市人民中路二店</dt>
+                                    <dd>江苏省江阴市人民中路77号</dd>
+                                </dl>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void (0);">
+                                <dl>
+                                    <dt>江苏省无锡江阴市人民中路店</dt>
+                                    <dd>江苏省无锡江阴市人民中路39号</dd>
+                                </dl>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void (0);">
+                                <dl>
+                                    <dt>江苏省无锡市崇安寺街区箭河街店</dt>
+                                    <dd>江苏省无锡市崇安寺街区箭河街1220、1222号</dd>
+                                </dl>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void (0);">
+                                <dl>
+                                    <dt>江苏省无锡市中山路店</dt>
+                                    <dd>江苏省无锡市中山路387号一楼</dd>
+                                </dl>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void (0);">
+                                <dl>
+                                    <dt>江苏省无锡市崇安区中山路崇安天街商业中心二店</dt>
+                                    <dd>江苏省无锡市崇安区中山路崇安天街商业中心</dd>
+                                </dl>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void (0);">
+                                <dl>
+                                    <dt>江苏省无锡市新区梅村锡义路五洲国际广场店</dt>
+                                    <dd>江苏省无锡市新区梅村锡义路与新友路交汇处五洲国际广场</dd>
+                                </dl>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void (0);">
+                                <dl>
+                                    <dt>爱居兔总部店</dt>
+                                    <dd>江苏省江阴市新桥镇海澜集团（爱居兔总部店）</dd>
+                                </dl>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void (0);">
+                                <dl>
+                                    <dt>爱居兔总部特卖店</dt>
+                                    <dd>江苏省江阴市新桥镇海澜集团（爱居兔总部店）</dd>
+                                </dl>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void (0);">
+                                <dl>
+                                    <dt>江苏省宜兴市蛟桥河步行街店</dt>
+                                    <dd>江苏省宜兴市蛟桥河步行街7号楼一层107号</dd>
+                                </dl>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void (0);">
+                                <dl>
+                                    <dt>江苏省无锡市锡山区锡沪中路易买得特卖店</dt>
+                                    <dd>江苏省无锡市锡山区锡沪中路易买得生活购物中心一楼</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!--观喜-->
+        <div class="footercon-t" style="display: none">
+            <div class="container-zgx">
+                <div class="cell">
+                    <div class="box">
+                        <div class="box1" id="box11">
+                            <div id="box1Con">
+                                <img src="images/04.jpg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="wrap1" id="wrap1">
+                            <a class="btn-1" href="#"><span>加盟条件</span></a>
+                        </div>
+
+                        <div class="box2" id="box22">
+                            <div id="box2Con">
+                                <img src="images/05.jpg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="wrap2" id="wrap2">
+                            <a class="btn-1" href="#"><span>合作条款</span></a>
+                        </div>
+
+                        <div class="box3" id="box33">
+                            <div id="box3Con">
+                                <img src="images/06.jpg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="wrap3" id="wrap3">
+                            <a class="btn-1" href="#"><span>受益分配</span></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="card" id="card">
+                        <li class="card-item">
+                            <div class="card-content">
+                                <div class="card-content-up">
+                                    <span class="spanfirst">加盟商</span>
+                                </div>
+                                <div class="card-content-down-first">
+                                    <ul>
+                                        <li>运营管理</li>
+                                        <li>店铺形象</li>
+                                        <li>供货方式</li>
+                                        <li>店铺工作人员</li>
+                                    </ul>
+                                </div>
+                                <div class="card-content-down-second">
+                                    <div class="feign">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card-item">
+                            <div class="card-content">
+                                <div class="card-content-up">
+                                    <span class="spanfirst">特许方</span>
+                                </div>
+                                <div class="card-content-down-first">
+                                    <ul>
+                                        <li>营业额分配</li>
+                                        <li>完全的民事行为能力</li>
+                                        <li>境内的企业法人</li>
+                                        <li>公司授权加盟</li>
+                                    </ul>
+                                </div>
+                                <div class="card-content-down-second">
+                                    <div class="feign">
+                                        <span></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card-item">
+                            <div class="card-content">
+                                <div class="card-content-up">
+                                    <span class="spanfirst">供货方</span>
+                                </div>
+                                <div class="card-content-down-first">
+                                    <ul>
+                                        <li>经济实力</li>
+                                        <li>民事行为</li>
+                                        <li>企业法人</li>
+                                        <li>授权加盟</li>
+                                    </ul>
+                                </div>
+                                <div class="card-content-down-second">
+                                    <div class="feign">
+                                        <span></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card-item">
+                            <div class="card-content">
+                                <div class="card-content-up">
+                                    <span class="spanfirst">承担方</span>
+                                </div>
+                                <div class="card-content-down-first">
+                                    <ul>
+                                        <li>营业额分配</li>
+                                        <li>完全的民事行为能力</li>
+                                        <li>境内的企业法人</li>
+                                        <li>公司授权加盟</li>
+                                    </ul>
+                                </div>
+                                <div class="card-content-down-second">
+                                    <div class="feign">
+                                        <span></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--页脚信息-->
+    <div class="footer">
+        <div class="footerinner">
+            <ul class="share">
+                <li>
+                    <img class="weibo_icon" src="images/share1.png" alt="">
+                </li>
+                <li>
+                    <img class="qq_icon" src="images/share2.png" alt="">
+                </li>
+                <li>
+                    <img class="twitter_icon" src="images/share3.png" alt="">
+                </li>
+                <li>
+                    <img class="wechat_icon" src="images/share4.png" alt="">
+                </li>
+            </ul>
+            <div class="code_wrap">
+                <ul class="code">
+                    <li><img class="weibo" src="images/weibo1.png" alt=""></li>
+                    <li><img class="qq" src="images/qq1.png" alt=""></li>
+                    <li><img class="twitter" src="images/twitter1.png" alt=""></li>
+                    <li><img class="wechat" src="images/wechat1.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/anewfooter.js"></script>
+</div>
+
+</body>
+</html>

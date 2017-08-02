@@ -1,0 +1,198 @@
+/*初始化*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,li {
+    list-style: none;
+}
+
+@charset "utf-8";
+/*banner部分开始 刘惠龙*/
+
+.body{
+    width:1200px;
+    overflow:hidden;
+    margin:0 auto;
+}
+.body .banner{
+    width:1200px;
+    height:500px;
+    position:relative;
+    margin:0 auto;
+    overflow:hidden;
+}
+.body .banner .bannerPic{
+    width:1200px;
+    height:500px;
+    position:absolute;
+    background:url(../images/banner01.jpg) no-repeat;
+}
+.body .banner .bannerPic .content
+{   width:240px;
+    height:500px;
+    float:left;
+    position:relative;
+    overflow:hidden;
+}
+.body .banner .bannerPic .content .txt{
+    width:216px;
+    height:100px;
+    background:rgba(18,21,44,0.5);
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    padding:0 12px;
+    border-top:2px solid #FFE000;
+    font-family: 微软雅黑;
+    font-size: 12px;
+}
+.body .banner .bannerPic .content .txt h3 {
+    color:#FFE000;
+    font-size:24px;
+    font-weight:100;
+    margin:10px 0 6px 0;
+}
+
+.body .banner .bannerPic h4{
+    color:#fff;
+    font-size:12px;
+    font-weight:100;
+    height: 40px;}
+.body .banner .bannerPic .content .txt p{
+    color:#fff;
+    margin-top:15px;
+    padding-top:5px;
+    border-top:1px solid #FFE000;
+    font-family: 微软雅黑;
+}
+
+/*banner部分结束 刘惠龙*/
+
+/*news二级页面 列表部分开始  彭宇*/
+.newMess {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.newMess ul li {
+    width: 346px;
+    float: left;
+    margin: 13px 11px;
+    padding: 8px 15px;
+}
+
+.newMess ul li .content {
+    position: relative;
+    width: 100%;
+    max-width: 346px;
+    margin: auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.newMess ul li .content-overlay {
+    background: rgba(255, 133, 165, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.newMess ul li:hover .content-overlay {
+    opacity: 1;
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.content-details h3 {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.fadeIn-bottom {
+    top: 80%;
+}
+
+.newMess ul li h3.title {
+    width: 346px;
+    font: 18px/36px "simsun";
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+.newMess ul li img {
+    width: 346px;
+}
+
+.newMess ul li span {
+    font: 14px/24px "consolas";
+    font-style: italic;
+    color: #333333;
+    border-bottom: 1px solid #666666;
+}
+
+.newMess ul li p {
+    width: 346px;
+    font: 12px/18px "simsun";
+    color: #666;
+}
+
+.newMess .News-more a {
+    position: absolute;
+    top: 1500px;
+    left: 50%;
+    z-index: 3;
+    margin-left: -70px;
+    margin-bottom: 50px;
+    height: 40px;
+    line-height: 40px;
+    width: 150px;
+    color: #333;
+    border: 1px solid #333;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+}
+
+.newMess .News-more a:hover {
+    color: #FF85A5;
+    border: 2px solid #FF85A5;
+}
+/*news二级页面 列表部分结束  彭宇*/

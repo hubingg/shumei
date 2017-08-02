@@ -1,0 +1,470 @@
+
+/*轮播图开始-刘惠龙*/
+.main_banner {
+    width: 100%;
+    height: 950px;
+    min-height: 580px;
+    max-height: 950px;
+    /*margin: 100px auto;*/
+    position: relative;
+    overflow: hidden;
+    background-color: #aaaaaa;
+}
+.main_banner ul li img{
+    width: 100%;
+    vertical-align: top;
+    display: block;
+}
+.main_banner ul{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0 ;
+
+}
+.main_banner ul li{
+    float: left;
+}
+.main_banner ol{
+    position: absolute;
+    left: 50%;
+    margin-left: -61px;
+    bottom: 30px;
+    line-height: 20px;
+    z-index: 2;
+}
+.main_banner ol li{
+    height: 18px;
+    width: 18px;
+    line-height:18px;
+    border-radius: 50%;
+    text-align: center;
+    float: left;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.main_banner ol li.active{
+    background-color: #fff;
+}
+.main_banner .arr{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -20px;
+    display: none;
+}
+.main_banner .arr #left{
+    float: left;
+    cursor: pointer;
+}
+.main_banner .arr #right{
+    float: right;
+    cursor: pointer;
+}
+/*轮播图结束-刘惠龙*/
+
+/*时尚大片开始-钟瑞*/
+
+/*通栏样式*/
+.outside{
+    background: #F0F0E1;
+}
+/*版心部分*/
+.camp{
+    width: 1900px;
+    min-height: 580px;
+    max-height: 950px;
+    margin:0 auto;
+    border: 1px solid white;
+    position:relative;
+    background: #EEEEEE;
+
+}
+/*顶部背景图片部分*/
+.camp .top{
+    padding-top: 30px;
+    background: url("../images/title-pic1.png") no-repeat bottom;
+    width: 116px;
+    height: 119px;
+    margin:15px auto;
+}
+/*文字部分*/
+.camp .center p{
+    font-size:16px;
+    font-family:arial, 'Microsoft Yahei', 'Hiragino Sans GB', 宋体, 宋体, Tahoma, Arial, Helvetica, STHeiti;
+    text-align: center;
+}
+/*主要类容部分的最外层大盒子*/
+.camp #camp-main{
+    height: 700px;
+    overflow:hidden;
+}
+/*触摸放大部分*/
+.camp #camp-main .bottom-1{
+    margin:100px auto ;
+    width: 1600px;
+    height: 500px;
+    /*position:relative;*/
+    border: 1px solid white;
+
+}
+
+.camp #camp-main .bottom-1 a{
+    position:absolute;
+}
+.camp #camp-main .bottom-1 a img{
+    position:absolute;
+}
+/*旋转部分*/
+.camp #camp-main .bottom-3{
+    margin:100px auto ;
+    width: 1600px;
+    height: 500px;
+    position:relative;
+    border: 1px dashed #FFF;
+    background:#EEEEEE;
+    display:none;
+}
+.camp #camp-main .bottom-3 ul li{
+
+    overflow:hidden;
+
+}
+.camp #camp-main .bottom-3 ul li img{
+    width: 100%;
+    height:100%;
+    border-radius:50%;
+    position:absolute;
+}
+/*旋转的点击按钮部分*/
+.camp #camp-main .bottom-3 .arrow {
+    width:100%;
+    opacity:1;
+    z-index: 100;
+    display:none;
+}
+.camp #camp-main .bottom-3 .arrow .prev,.camp #camp-main .bottom-3 .arrow .next {
+    width: 76px;
+    height: 112px;
+    line-height: 112px;
+    position:absolute;
+    top: 50%;
+    margin-top: -56px;
+    background: url(../images/prev.png) no-repeat;
+    z-index: 100;
+}
+.camp #camp-main .bottom-3 .arrow .next {
+    right: 0;
+    background: url(../images/next.png) no-repeat right top;
+}
+.camp #camp-main .bottom-3 .arrow .prev {
+    left:0;
+}
+
+/*点击换装的部分*/
+.camp .choose ul{
+    position:absolute;
+    top:500px;
+    opacity:0;
+}
+.camp .choose li{
+    width: 100px;
+    height: 100px;
+    font: normal 25px/100px arial, 微软雅黑, 'Microsoft Yahei', 'Hiragino Sans GB', 宋体, 宋体, Tahoma, Arial, Helvetica, STHeiti;
+    background-color:#333;
+    color:white;
+    text-align: center;
+    cursor:pointer;
+    border-radius:50%;
+    transition: all .2s;
+}
+.camp .choose li:hover {
+    background-color:#ccc;
+    color:#333;
+}
+
+/*时尚大片结束-钟瑞*/
+
+
+/*何银雪 ? collection_start*/
+.collection  {
+    min-height: 580px;
+    /*height: 785px;*/
+    max-height: 950px;
+}
+/*时装标题*/
+.collection .collection_pic_title {
+    width: 285px;
+    height: 250px;
+    background: url("../images/title-pic2.png") no-repeat center 0;
+    margin: 0 auto 30px;
+}
+/*时装图片*/
+.collection .collection_wrap {
+    background: #000;
+    height: 535px;
+    width: 1350px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.collection .collection_pic {
+    position: relative;
+    float: left;
+    height: 535px;
+    /*background-color: #000;*/
+}
+
+.collection .collection_pic img {
+    width: 450px;
+    height: 535px;
+    display: block;
+    border: 0;
+}
+/* 图片文字内容*/
+.collection .collection_pic_text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    margin-top: -60px;
+    text-align: center;
+    /*z-index: 1;*/
+}
+
+.collection .collection_pic_text em {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    border: 1px solid #fff;
+    font: 40px/72px Tahoma, Arial;
+    color: #fff;
+    letter-spacing: 12px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+.collection .collection_pic_text i {
+    display: block;
+    font: 12px/20px Tahoma, Arial;
+    color: #fff;
+    letter-spacing: 7px;
+}
+.collection .collection_pic_text .text1 {
+    position: absolute;
+    left: 65px;
+}
+.collection .text2 {
+    position: absolute;
+    left: 65px;
+}
+.collection .text3 {
+    position: absolute;
+    left: 65px;
+}
+/*何银雪 ? collection_end*/
+
+/*share部分开始- 宋红娟*/
+.Collection-bot{
+    width: 840px;
+    /*height: 559px;*/
+    height: 950px;
+    max-height: 950px;
+    margin: 40px auto 0;
+}
+.Collection-bot .share_pic_title {
+    /*padding-top: 5px;*/
+    width: 285px;
+    height: 245px;
+    background: url("../images/share_title.png") no-repeat bottom;
+    margin: 0 auto 10px;
+}
+.Collection-bot a{
+    width: 370px;
+    height: 559px;
+    /*display: block;*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.Collection-bot .fashion,.Collection-bot .foreword{
+    width: 370px;
+    height: 559px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+.Collection-bot .fashion{
+    margin: 0 0 65px 50px;
+}
+.Collection-bot .foreword{
+    margin: 0 50px 65px 0;
+}
+.Collection-bot i{
+    width: 348px;
+    height: 537px;
+    display: block;
+    border: 1px solid #DBD7D2;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.Collection-bot .Txt{
+    width: 170px;
+    height: 44px;
+    border-left: 4px solid #fff;
+    color: #fff;
+    position: absolute;
+    left: 23px;
+    bottom: 97px;
+}
+.Collection-bot .Txt .max{
+    font:30px/30px microsoft yahei;
+    padding-left: 16px;
+}
+.Collection-bot .Txt .min{
+    font:14px/10px microsoft yahei;
+    padding-top: 4px;
+    padding-left: 16px;
+}
+/*share部分结束- 宋红娟*/
+
+/*品牌动态部分- 开始  彭宇*/
+.news {
+    position: relative;
+    height: 830px;
+    overflow: hidden;
+}
+
+/*背景*/
+.news .news-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1000px;
+    width: 2000px;
+    height: 830px;
+    z-index: 1;
+}
+
+/*标题*/
+.news .news-title {
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    margin-left: -146px;
+    width: 292px;
+    height: 64px;
+    background: url(../images/title-pic3.png);
+    z-index: 9;
+}
+
+/*描述文字*/
+.news-Text {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 60px;
+    right: -40px;
+    padding: 30px;
+    background: url(../images/bg1.png);
+    text-align: left;
+    color: #FFF;
+    z-index: 11;
+}
+
+.news-Text .text-title {
+    font: 18px/22px 'simsun';
+}
+
+.news-Text p {
+    font: 14px/24px "simsun";
+    margin: 15px 0 20px 0;
+}
+
+.news-Text span a {
+    font: 14px/24px "Arial";
+    color: #FFF;
+}
+
+/*主体-旋转木马*/
+.news .newsBox {
+    width: 900px;
+    margin: 180px auto;
+}
+
+.news .news-main{
+    position: relative;
+    width: 900px;
+    height: 500px;
+    z-index: 8;
+}
+
+.news .news-main li{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.news .news-main li img{
+    width: 100%;
+}
+
+/*箭头符号*/
+.arrow {
+    display: none;
+    z-index: 100;
+}
+
+.left,.right {
+    width: 50px;
+    height: 100px;
+    position:absolute;
+    top: 50%;
+    margin-top: -50px;
+    background: url(../images/prev.png) no-repeat;
+    z-index: 100;
+}
+
+.right {
+    right: 0;
+    background-image: url(../images/next.png);
+}
+
+/*查看全部动态*/
+.news .News-more a {
+    position: absolute;
+    top: 760px;
+    left: 50%;
+    z-index: 3;
+    margin-left: -70px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    width: 150px;
+    border: 1px solid #333;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+}
+
+.news .News-more a:hover {
+    color: #000;
+    border: 2px solid #000;
+}
+/*品牌动态部分- 结束  彭宇*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
